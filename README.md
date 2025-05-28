@@ -15,3 +15,9 @@
 < Commit 메시지 규칙>
 
 <img width="383" alt="스크린샷 2025-05-27 17 15 10" src="https://github.com/user-attachments/assets/594ede48-af72-41cd-a7fe-551cdf7ed20a" />
+
+
+
+
+<데이터 명세서>
+[__________.csv](https://github.com/user-attachments/files/20477676/__________.csv)
