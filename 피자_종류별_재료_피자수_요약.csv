@@ -1,0 +1,103 @@
+﻿피자 종류,재료,피자 메뉴 개수
+Classic,Sliced Ham,1
+Classic,Pineapple,1
+Classic,Mozzarella Cheese,2
+Classic,Pepperoni,4
+Classic,Mushrooms,2
+Classic,Red Onions,3
+Classic,Red Peppers,2
+Classic,Bacon,2
+Classic,Kalamata Olives,1
+Classic,Feta Cheese,1
+Classic,Tomatoes,3
+Classic,Garlic,3
+Classic,Beef Chuck Roast,1
+Classic,Capocollo,1
+Classic,Goat Cheese,1
+Classic,Oregano,1
+Classic,Italian Sausage,1
+Classic,Chorizo Sausage,1
+Classic,Anchovies,1
+Classic,Green Olives,1
+Classic,Green Peppers,1
+Veggie,Mozzarella Cheese,2
+Veggie,Provolone Cheese,1
+Veggie,Smoked Gouda Cheese,1
+Veggie,Romano Cheese,1
+Veggie,Blue Cheese,1
+Veggie,Garlic,7
+Veggie,Tomatoes,5
+Veggie,Red Peppers,3
+Veggie,Jalapeno Peppers,1
+Veggie,Red Onions,4
+Veggie,Cilantro,1
+Veggie,Corn,1
+Veggie,Chipotle Sauce,1
+Veggie,Spinach,5
+Veggie,Mushrooms,3
+Veggie,Green Olives,1
+Veggie,Feta Cheese,3
+Veggie,Artichokes,3
+Veggie,Sun-dried Tomatoes,2
+Veggie,Pesto Sauce,2
+Veggie,Green Peppers,1
+Veggie,Zucchini,2
+Veggie,Ricotta Cheese,1
+Veggie,Gorgonzola Piccante Cheese,1
+Veggie,Parmigiano Reggiano Cheese,1
+Veggie,Eggplant,1
+Veggie,Kalamata Olives,1
+Veggie,Plum Tomatoes,1
+Supreme,Calabrese Salami,1
+Supreme,Capocollo,3
+Supreme,Tomatoes,6
+Supreme,Red Onions,3
+Supreme,Green Olives,2
+Supreme,Garlic,8
+Supreme,Prosciutto di San Daniele,1
+Supreme,Arugula,1
+Supreme,Mozzarella Cheese,2
+Supreme,Spinach,1
+Supreme,Pepperoni,2
+Supreme,Artichokes,2
+Supreme,Kalamata Olives,1
+Supreme,Asiago Cheese,2
+Supreme,Goat Cheese,1
+Supreme,Peperoncini verdi,1
+Supreme,Soppressata Salami,1
+Supreme,Fontina Cheese,1
+Supreme,Mushrooms,1
+Supreme,?duja Salami,1
+Supreme,Pancetta,1
+Supreme,Friggitello Peppers,1
+Supreme,Genoa Salami,1
+Supreme,Coarse Sicilian Salami,1
+Supreme,Luganega Sausage,1
+Supreme,Onions,1
+Supreme,Brie Carre Cheese,1
+Supreme,Prosciutto,1
+Supreme,Caramelized Onions,1
+Supreme,Pears,1
+Supreme,Thyme,1
+Chicken,Chicken,5
+Chicken,Pineapple,1
+Chicken,Tomatoes,4
+Chicken,Red Peppers,5
+Chicken,Thai Sweet Chilli Sauce,1
+Chicken,Barbecued Chicken,1
+Chicken,Green Peppers,1
+Chicken,Red Onions,3
+Chicken,Barbecue Sauce,1
+Chicken,Jalapeno Peppers,2
+Chicken,Corn,1
+Chicken,Cilantro,1
+Chicken,Chipotle Sauce,1
+Chicken,Artichoke,1
+Chicken,Spinach,2
+Chicken,Garlic,2
+Chicken,Fontina Cheese,1
+Chicken,Gouda Cheese,1
+Chicken,Pesto Sauce,1
+Chicken,Mushrooms,1
+Chicken,Asiago Cheese,1
+Chicken,Alfredo Sauce,1
