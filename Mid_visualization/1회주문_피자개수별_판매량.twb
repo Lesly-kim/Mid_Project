@@ -1,0 +1,319 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0415.1018                               -->
+<workbook original-version='18.1' source-build='2025.1.1 (20251.25.0415.1018)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='조합개수별_빈도_Top10' inline='true' name='federated.02cm5l91n0ixx21c2tt1e0wspadu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='조합개수별_빈도_Top10' name='textscan.02ya2b001p8as61gkos7004ams3b'>
+            <connection class='textscan' directory='C:/Users/최현석/OneDrive/바탕 화면/workspace/미드프로젝트/pizza/Mid_Project' filename='조합개수별_빈도_Top10.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.02ya2b001p8as61gkos7004ams3b' name='조합개수별_빈도_Top10.csv' table='[조합개수별_빈도_Top10#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='integer' name='조합개수' ordinal='0' />
+            <column datatype='integer' name='빈도수' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[조합개수별_빈도_Top10.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>조합개수</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[조합개수]</local-name>
+            <parent-name>[조합개수별_빈도_Top10.csv]</parent-name>
+            <remote-alias>조합개수</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[조합개수별_빈도_Top10.csv_0EFAA5A944814CEF92568868A3BE60FC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>빈도수</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[빈도수]</local-name>
+            <parent-name>[조합개수별_빈도_Top10.csv]</parent-name>
+            <remote-alias>빈도수</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[조합개수별_빈도_Top10.csv_0EFAA5A944814CEF92568868A3BE60FC]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Dummy Axis' datatype='integer' name='[Calculation_1307732757187153920]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='0' />
+      </column>
+      <column caption='주문 피자 개수' datatype='string' name='[Calculation_839358395934326784]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='STR([조합개수])' />
+      </column>
+      <column caption='조합개수별_빈도_Top10.csv' datatype='table' name='[__tableau_internal_object_id__].[조합개수별_빈도_Top10.csv_0EFAA5A944814CEF92568868A3BE60FC]' role='measure' type='quantitative' />
+      <column aggregation='None' datatype='integer' name='[빈도수(구간차원)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='3' formula='[빈도수]' peg='0' size='1080' />
+      </column>
+      <column caption='판매횟수' datatype='integer' name='[빈도수]' role='measure' type='quantitative' />
+      <column aggregation='None' datatype='integer' name='[조합개수(구간차원)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[조합개수]' peg='0' size='2.56' />
+      </column>
+      <column datatype='integer' name='[조합개수]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='ko_KR' class='hyper' dbname='C:/Users/최현석/AppData/Local/Temp/TableauTemp/#TableauTemp_0oj4ioa1fwn6pt18x8c1p115j7jj.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/30/2025 06:56:38 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>조합개수</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[조합개수]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>조합개수</remote-alias>
+              <ordinal>0</ordinal>
+              <family>조합개수별_빈도_Top10.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[조합개수별_빈도_Top10.csv_0EFAA5A944814CEF92568868A3BE60FC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>빈도수</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[빈도수]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>빈도수</remote-alias>
+              <ordinal>1</ordinal>
+              <family>조합개수별_빈도_Top10.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[조합개수별_빈도_Top10.csv_0EFAA5A944814CEF92568868A3BE60FC]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='조합개수' />
+        <field-sort-custom-order field='Calculation_839358395934326784' />
+        <field-sort-custom-order field='빈도수' />
+        <field-sort-custom-order field='빈도수(구간차원)' />
+        <field-sort-custom-order field='조합개수(구간차원)' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='조합개수별_빈도_Top10.csv' id='조합개수별_빈도_Top10.csv_0EFAA5A944814CEF92568868A3BE60FC'>
+            <properties context=''>
+              <relation connection='textscan.02ya2b001p8as61gkos7004ams3b' name='조합개수별_빈도_Top10.csv' table='[조합개수별_빈도_Top10#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='integer' name='조합개수' ordinal='0' />
+                  <column datatype='integer' name='빈도수' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='시트 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>주문 피자 개수별 판매 횟수</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='조합개수별_빈도_Top10' name='federated.02cm5l91n0ixx21c2tt1e0wspadu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02cm5l91n0ixx21c2tt1e0wspadu'>
+            <column caption='주문 피자 개수' datatype='string' name='[Calculation_839358395934326784]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='STR([조합개수])' />
+            </column>
+            <column-instance column='[Calculation_839358395934326784]' derivation='None' name='[none:Calculation_839358395934326784:nk]' pivot='key' type='nominal' />
+            <column-instance column='[빈도수]' derivation='Sum' name='[sum:빈도수:qk]' pivot='key' type='quantitative' />
+            <column caption='판매횟수' datatype='integer' name='[빈도수]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[조합개수]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02cm5l91n0ixx21c2tt1e0wspadu].[none:Calculation_839358395934326784:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.02cm5l91n0ixx21c2tt1e0wspadu].[sum:빈도수:qk]</rows>
+        <cols>[federated.02cm5l91n0ixx21c2tt1e0wspadu].[none:Calculation_839358395934326784:nk]</cols>
+      </table>
+      <simple-id uuid='{016364D3-B497-403A-A267-C285D70D771C}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='시트 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[federated.02cm5l91n0ixx21c2tt1e0wspadu].[none:Calculation_839358395934326784:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.02cm5l91n0ixx21c2tt1e0wspadu].[none:Calculation_839358395934326784:nk]</field>
+            <field>[federated.02cm5l91n0ixx21c2tt1e0wspadu].[none:빈도수(구간차원):qk]</field>
+            <field>[federated.02cm5l91n0ixx21c2tt1e0wspadu].[none:조합개수(구간차원):qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{057B4F79-901E-4D55-B364-A207F982FE01}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='시트 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
